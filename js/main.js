@@ -5,6 +5,7 @@ function shakeOnload() {
     }
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        alert('IOS');
         document.body.innerHTML = 
         'div id="permission"> \
             <div class="app">\
@@ -24,7 +25,6 @@ function shakeOnload() {
                 </div>\
             </div>\
         </div>';
-        return;
     }
 
     var myShakeEvent = new Shake({
