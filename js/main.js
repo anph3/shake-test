@@ -8,9 +8,6 @@ function shakeOnload() {
     }
     else{
         function permission() {
-            // const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-            // document.body.style.backgroundColor = "#" + randomColor;
-            // color.innerHTML = "#" + randomColor;
             if (typeof (DeviceMotionEvent) !== "undefined" && typeof (DeviceMotionEvent.requestPermission) === "function") {
                 // (optional) Do something before API request prompt.
                 DeviceMotionEvent.requestPermission()
