@@ -1,7 +1,7 @@
 function shakeOnload() {
-    // if (location.protocol != "https:") {
-    //     location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-    // }
+    if (location.protocol != "https:") {
+        location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    }
 
     if (getMobileOperatingSystem() == 2){
         document.getElementById('permission').style.display = 'none';
