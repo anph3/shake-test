@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background: #E9E9E9;
+    font: 1em/1.3em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+#permission {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_item {}
+
+.app_item span {
+    display: block;
+    margin-bottom: 2%;
+}
+
+.app_item img {
+    display: block;
+    width: 100%;
+}
+
+.app_item .btn {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.btn .accept {
+    background-color: darkgreen;
+    width: 100%;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.btn .cancel {
+    background-color: crimson;
+    width: 100%;
+    padding: 2%;
+    cursor: pointer;
+}
+
+#app {
+    /* display: none; */
+    background: #ff0;
+    width: 100%;
+    height: 100%;
+}
