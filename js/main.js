@@ -4,6 +4,29 @@ function shakeOnload() {
         location.href = "https:" + window.location.href.substring(window.location.protocol.length);
     }
 
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        document.body.innerHTML = 
+        'div id="permission"> \
+            <div class="app">\
+                <div class="app_item"> \
+                    <span>\
+                        Bạn cần cấp quyền để sử dụng tính năng\
+                    </span>\
+                    <img src="./img/shake-icon.png">\
+                    <div class="btn">\
+                        <div class="accept" id="accept-request">\
+                            Cấp quyền\
+                        </div>\
+                        <div class="cancel">\
+                            Thoát\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>';
+        return;
+    }
+
     var myShakeEvent = new Shake({
         threshold: 15
     });
