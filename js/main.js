@@ -4,6 +4,8 @@ function shakeOnload() {
         location.href = "https:" + window.location.href.substring(window.location.protocol.length);
     }
 
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         alert('IOS');
         document.body.innerHTML = 
