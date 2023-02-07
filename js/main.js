@@ -18,7 +18,7 @@ function shakeOnload() {
                         document.getElementById("accept-request").style.display = 'none';
                         shakeAction();
                     })
-                    .catch(console.error)
+                    .catch(console.error) 
             } else {
                 alert("DeviceMotionEvent is not defined");
             }
@@ -43,6 +43,7 @@ function shakeAction(){
         const randomColor = Math.floor(Math.random() * 16777215).toString(16);
         document.body.style.backgroundColor = "#" + randomColor;
         color.innerHTML = "#" + randomColor;
+        navigator.vibrate([500]);
     }
 }
 
@@ -66,4 +67,4 @@ function getMobileOperatingSystem() {
     return 4;
 }
 
-window.onload = shakeOnload()
+window.onload = shakeOnload();
